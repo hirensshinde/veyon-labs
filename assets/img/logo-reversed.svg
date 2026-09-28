@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 32" width="196" height="32" role="img" aria-label="Veyon Labs">
+  <g transform="translate(0 2) scale(.5833)">
+    <path d="M0 0h16a32 32 0 0 0 32 32v16H0Z" fill="#EDEAE1"/>
+    <rect x="36" y="0" width="12" height="12" fill="#FF4F30"/>
+  </g>
+  <text x="38" y="24" font-family="Archivo, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="22" font-weight="600" letter-spacing="-0.9" fill="#EDEAE1">Veyon Labs</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Veyon Labs">
+  <path d="M8 10h10l11.2 28h-10Z" fill="#15150F"/>
+  <path d="M56 10H46l-11.2 28h10Z" fill="#15150F"/>
+  <rect x="27" y="44" width="10" height="10" fill="#D8351A"/>
+</svg>
