@@ -738,8 +738,8 @@ p { text-wrap: pretty; }
 .prose strong { color: var(--ink); font-weight: 600; }
 .prose em { font-family: var(--font-serif); font-style: italic; font-size: 1.06em; }
 .prose ul, .prose ol { display: grid; gap: 11px; }
-.prose ul li { display: grid; grid-template-columns: 22px 1fr; }
-.prose ul li::before { content: "—"; color: var(--ink-3); font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.95; }
+.prose ul li { position: relative; padding-left: 22px; }
+.prose ul li::before { content: "—"; position: absolute; left: 0; color: var(--ink-3); font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.95; }
 .prose ol { counter-reset: p; }
 .prose ol li { display: grid; grid-template-columns: 30px 1fr; counter-increment: p; }
 .prose ol li::before {
@@ -994,6 +994,9 @@ p { text-wrap: pretty; }
   letter-spacing: 0.06em;
   color: var(--ink-3);
 }
+.footer-legal { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.footer-legal a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--rule-strong); }
+.footer-legal a:hover { color: var(--signal); text-decoration-color: var(--signal); }
 
 /* The wordmark, set large at the foot of the page. */
 .wordmark {

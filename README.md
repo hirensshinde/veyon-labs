@@ -20,6 +20,9 @@ blog-six-week-mvp.html           Post
 blog-react-native-vs-native.html Post
 blog-shipping-ai-features.html   Post
 contact.html                     Contact form
+terms.html                       Terms of Service
+privacy.html                     Privacy Policy
+refund.html                      Refund and Cancellation Policy (+ delivery)
 404.html                         Not found
 robots.txt, sitemap.xml          SEO
 assets/css/main.css              All styling (design tokens at the top)
@@ -134,10 +137,9 @@ the pages.
 - [ ] Replace `hello@veyonlabs.com` throughout (footer, contact strip and `contact.html`).
       The phone number is already set to `+91 98249 98870`.
 - [ ] Point the contact form at a real endpoint (above).
-- [ ] **Finish the Onehostbox copy.** The page states what is known: it is an AI code and hosting
-      platform working directly from Git, live since 2026, at onehostbox.com. Two placeholders remain
-      on `onehostbox.html` — the audience paragraph and the capability list. They render as dashed red
-      boxes; `grep -rn "todo" *.html` lists them.
+- [ ] **Review the legal pages** (`terms.html`, `privacy.html`, `refund.html`) with a lawyer, and
+      confirm the refund terms (7-day refund on new Onehostbox subscriptions) match how you bill.
+      Update the "Last updated" date whenever you change them.
 - [ ] Add real client case studies to `work.html` (and a "Selected work" section on the home
       page) once they're ready. The placeholder case studies and testimonials have been removed.
 - [ ] Swap `https://veyonlabs.com` in each page's `<link rel="canonical">`, the Open Graph
