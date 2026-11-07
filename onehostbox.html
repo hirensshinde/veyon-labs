@@ -34,7 +34,6 @@
 
       <ul class="nav__links" id="nav-links">
         <li><a href="services.html" data-section="services">Services</a></li>
-        <li><a href="work.html" data-section="work">Work</a></li>
         <li><a href="about.html" data-section="about">Studio</a></li>
         <li><a href="blog.html" data-section="blog">Journal</a></li>
         <li class="mobile-cta"><a href="contact.html">Start a project</a></li>
@@ -74,41 +73,101 @@
 
   <section class="section--sm" style="padding-top:0">
     <div class="wrap">
-      <div class="diagram reveal">
-<svg class="gfx" viewBox="0 0 720 258" role="img" aria-label="Diagram: a Git repository feeds AI-assisted code, which builds and deploys to hosting, all from the same repository">
-  <g class="s-rule"><path d="M0 150H720"/></g>
-
-  <g class="s-ink">
-    <rect x="16" y="40" width="150" height="90"/>
-    <rect x="285" y="40" width="150" height="90"/>
-    <rect x="554" y="40" width="150" height="90"/>
-  </g>
-
-  <g class="f-ink">
-    <rect x="52" y="70" width="78" height="6"/>
-    <rect x="52" y="82" width="52" height="6"/>
-    <rect x="52" y="94" width="66" height="6"/>
-  </g>
-  <path class="f-signal" d="M360 62 397 85 360 108 323 85Z"/>
-  <rect class="f-ink" x="590" y="66" width="78" height="38"/>
-  <rect class="f-paper" x="602" y="78" width="54" height="14"/>
-
-  <g class="s-ink">
-    <path d="M186 85h79m0 0-11-8m11 8-11 8"/>
-    <path d="M455 85h79m0 0-11-8m11 8-11 8"/>
-  </g>
-
-  <text class="t t-ink" x="16" y="172">GIT REPOSITORY</text>
-  <text class="t t-ink" x="285" y="172">AI CODE</text>
-  <text class="t t-ink" x="554" y="172">HOSTING</text>
-  <text class="t" x="16" y="190">source of truth</text>
-  <text class="t" x="285" y="190">generate &amp; edit</text>
-  <text class="t" x="554" y="190">build &amp; serve</text>
-
-  <!-- Return bracket sits clear below the labels, spanning the whole flow. -->
-  <g class="s-signal"><path d="M91 212v16h538v-16" class="dash"/></g>
-  <text class="t" x="360" y="250" text-anchor="middle">one repository, end to end</text>
-</svg></div>
+      <figure class="diagram diagram--wide reveal" style="margin:0">
+<svg class="gfx" viewBox="0 0 1000 440" role="img" aria-label="Illustration of the Onehostbox workspace: a repository file tree, an AI-suggested code change ready to commit, and a deployments panel building and serving that commit">
+  <rect class="f-paper" x="0" y="0" width="1000" height="440"/>
+  <rect class="s-ink" x="0.5" y="0.5" width="999" height="439"/>
+  <g class="s-rule"><path d="M0 36H1000M200 36V440M640 36V440M200 68H640M640 236H1000M640 132H1000M640 184H1000M640 372H1000"/></g>
+  <rect class="f-rule" x="16" y="14" width="8" height="8"/>
+  <rect class="f-rule" x="30" y="14" width="8" height="8"/>
+  <rect class="f-rule" x="44" y="14" width="8" height="8"/>
+  <text class="t" x="500" y="23" text-anchor="middle">acme/storefront · main</text>
+  <rect class="f-signal" x="930" y="15" width="6" height="6"/>
+  <text class="t t-ink" x="984" y="23" text-anchor="end">LIVE</text>
+  <text class="t" x="16" y="62">FILES</text>
+  <text class="t t-ink" x="16" y="92">app/</text>
+  <text class="t" x="32" y="118">page.tsx</text>
+  <text class="t" x="32" y="144">layout.tsx</text>
+  <text class="t t-ink" x="16" y="170">api/</text>
+  <rect class="f-rule" x="1" y="180" width="199" height="24" opacity="0.5"/>
+  <rect class="f-signal" x="0" y="180" width="2" height="24"/>
+  <text class="t t-ink" x="32" y="196">checkout.ts</text>
+  <text class="t" x="32" y="222">orders.ts</text>
+  <text class="t" x="16" y="248">package.json</text>
+  <text class="t" x="16" y="392">BRANCH</text>
+  <text class="t t-ink" x="16" y="414">main · 3 ahead</text>
+  <text class="t t-ink" x="216" y="57">checkout.ts</text>
+  <rect class="f-signal" x="208" y="66" width="104" height="2"/>
+  <text class="t" x="624" y="57" text-anchor="end">AI EDIT</text>
+  <text class="t" x="234" y="94" text-anchor="end">1</text>
+  <rect class="f-ink" x="262" y="86" width="120" height="6"/>
+  <text class="t" x="234" y="114" text-anchor="end">2</text>
+  <rect class="f-ink" x="262" y="106" width="180" height="6"/>
+  <text class="t" x="234" y="134" text-anchor="end">3</text>
+  <text class="t" x="234" y="154" text-anchor="end">4</text>
+  <rect class="f-ink" x="262" y="146" width="150" height="6"/>
+  <text class="t" x="234" y="174" text-anchor="end">5</text>
+  <rect class="f-ink" x="278" y="166" width="200" height="6"/>
+  <rect class="f-rule" x="201" y="180" width="438" height="20" opacity="0.6"/>
+  <text class="t" x="234" y="194" text-anchor="end">6</text>
+  <text class="t t-ink" x="246" y="194">−</text>
+  <rect class="f-muted" x="278" y="186" width="170" height="6"/>
+  <rect class="f-signal" x="201" y="200" width="438" height="20" opacity="0.1"/>
+  <text class="t" x="234" y="214" text-anchor="end">7</text>
+  <text class="t" x="246" y="214" style="fill:var(--signal)">+</text>
+  <rect class="f-signal" x="278" y="206" width="214" height="6"/>
+  <rect class="f-signal" x="201" y="220" width="438" height="20" opacity="0.1"/>
+  <text class="t" x="234" y="234" text-anchor="end">8</text>
+  <text class="t" x="246" y="234" style="fill:var(--signal)">+</text>
+  <rect class="f-signal" x="294" y="226" width="160" height="6"/>
+  <rect class="f-signal" x="201" y="240" width="438" height="20" opacity="0.1"/>
+  <text class="t" x="234" y="254" text-anchor="end">9</text>
+  <text class="t" x="246" y="254" style="fill:var(--signal)">+</text>
+  <rect class="f-signal" x="294" y="246" width="190" height="6"/>
+  <text class="t" x="234" y="274" text-anchor="end">10</text>
+  <rect class="f-ink" x="278" y="266" width="60" height="6"/>
+  <text class="t" x="234" y="294" text-anchor="end">11</text>
+  <rect class="f-ink" x="262" y="286" width="20" height="6"/>
+  <rect class="f-paper" x="216" y="314" width="408" height="108"/>
+  <rect class="s-ink" x="216.5" y="314.5" width="407" height="107"/>
+  <path class="f-signal" d="M238 326 241 335 250 338 241 341 238 350 235 341 226 338 235 335Z"/>
+  <text class="t t-ink" x="258" y="342">AI SUGGESTION</text>
+  <text class="t" x="608" y="342" text-anchor="end">+3 −1</text>
+  <text class="t" x="232" y="368">Retry failed webhook calls with backoff</text>
+  <rect class="f-ink" x="232" y="384" width="140" height="26"/>
+  <text class="t" x="302" y="401" text-anchor="middle" style="fill:var(--paper)">COMMIT TO MAIN</text>
+  <rect class="s-rule" x="382.5" y="384.5" width="89" height="25"/>
+  <text class="t" x="427" y="401" text-anchor="middle">DISCARD</text>
+  <text class="t" x="656" y="62">DEPLOYMENTS</text>
+  <rect class="f-signal" x="656" y="97" width="6" height="6"/>
+  <text class="t t-ink" x="672" y="104">a1f3c9e</text>
+  <text class="t" x="672" y="122">retry webhook calls</text>
+  <text class="t" x="984" y="104" text-anchor="end" style="fill:var(--signal)">BUILDING</text>
+  <rect class="f-ink" x="656" y="149" width="6" height="6"/>
+  <text class="t t-ink" x="672" y="156">7c02d4b</text>
+  <text class="t" x="672" y="174">update pricing copy</text>
+  <text class="t t-ink" x="984" y="156" text-anchor="end">LIVE · 2M</text>
+  <rect class="f-ink" x="656" y="201" width="6" height="6"/>
+  <text class="t t-ink" x="672" y="208">e91b5a0</text>
+  <text class="t" x="672" y="226">fix auth redirect</text>
+  <text class="t t-ink" x="984" y="208" text-anchor="end">LIVE · 1H</text>
+  <text class="t" x="656" y="264">PIPELINE · a1f3c9e</text>
+  <g class="s-ink"><path d="M696 300H820"/><path d="M832 300H950" class="dash"/></g>
+  <rect class="f-ink" x="684" y="294" width="12" height="12"/>
+  <rect class="f-signal" x="820" y="294" width="12" height="12"/>
+  <rect class="s-ink" x="950.5" y="294.5" width="11" height="11"/>
+  <text class="t t-ink" x="690" y="330" text-anchor="middle">COMMIT</text>
+  <text class="t" x="690" y="348" text-anchor="middle">0:02</text>
+  <text class="t t-ink" x="826" y="330" text-anchor="middle">BUILD</text>
+  <text class="t" x="826" y="348" text-anchor="middle">0:41</text>
+  <text class="t t-ink" x="956" y="330" text-anchor="middle">DEPLOY</text>
+  <text class="t" x="956" y="348" text-anchor="middle">—</text>
+  <text class="t" x="656" y="400">DOMAIN</text>
+  <text class="t t-ink" x="736" y="400">shop.acme.com</text>
+  <path class="s-ink" d="M970 404l10-10m0 0h-7m7 0v7"/>
+</svg>
+        <figcaption class="meta-mono" style="margin:16px auto 0;max-width:1000px">Illustration · an AI edit is committed to the repository, then built and deployed from it.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -238,7 +297,6 @@
           <h4>Studio</h4>
           <ul>
             <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
             <li><a href="onehostbox.html">Onehostbox</a></li>
             <li><a href="blog.html">Journal</a></li>
             <li><a href="contact.html">Contact</a></li>
